@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 
 .header {
@@ -161,20 +162,28 @@ main {
 }
 
 .btn-primary:hover {
-    background-color: #1259c3;
-    opacity: 0.9;
+    background-color: #0022aa;
 }
 
 .footer {
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
     margin-top: 6rem;
     margin-bottom: 2rem;
+    color: #666;
 }
 
-.footer section {
+.items-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .items-footer article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -184,16 +193,16 @@ main {
     color: #666;
 }
 
-.footer section h6 {
+.footer .items-footer article h6 {
     font-size: 16px;
 }
 
-.footer section i {
+.footer .items-footer article i {
     color: #1259c3;
     font-size: 3rem;
 }
 
-.footer section span {
+.footer .items-footer article span {
     font-size: 14px;
 }
 
@@ -232,9 +241,17 @@ main {
         width: 30%;
         gap: 1.5rem;
     }
+
+    .items-footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 2rem;
+    }
 }
 
-/* Colores */ 
+/* Colores */
 .yellow-text {
     color: #eac926;
 }
